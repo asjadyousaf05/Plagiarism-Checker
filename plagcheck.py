@@ -96,9 +96,4 @@ if uploaded_files and len(uploaded_files) > 1:
         for i, f in enumerate(uploaded_files):
             st.text_area(f"Document: {file_names[i]}", docs[i][:1000] + "...", height=100)
 
-st.write("🔍 Library Versions:")
-st.write(f"• Streamlit: {st.__version__}")
-st.write(f"• PyPDF2: {PyPDF2.__version__}")
-st.write(f"• scikit-learn: {sklearn.__version__}")
-st.write(f"• pandas: {pd.__version__}")
-st.write(f"• re: built-in (no version)")
+
